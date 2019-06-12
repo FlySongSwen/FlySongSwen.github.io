@@ -11,10 +11,11 @@ var ballObj = function () {
 }
 
 ballObj.prototype.num = 10;
-ballObj.prototype.radius = 30;
 ballObj.prototype.gravity = 0.3;
 
+
 ballObj.prototype.init = function () {
+    ballObj.prototype.radius = RADIUS/10;        //变量提前所以初始化要在此进行
     for (var i = 0;i < this.num;i++){
         this.alive[i] = false;
         this.x[i] = 0;
@@ -30,7 +31,7 @@ ballObj.prototype.init = function () {
 
 ballObj.prototype.draw = function() {       
     this.upDateBalls();
-    //console.log("(" + this.x[0] +"," + this.y[0] + ")");
+    // console.log("(" + this.x[0] +"," + this.y[0] + ")");
     ctx2.clearRect(0,0,canWidth,canHeight);
     for (var i = 0; i < this.num ; i ++) {
         if (this.alive[i]) {
