@@ -1,7 +1,7 @@
 var dataObj = function () {
     this.score = 0;
-    this.positionX = 80;
-    this.positionY = 90;
+    this.positionX = canWidth/10;
+    this.positionY = canHeight/10;
     this.width = 120;
     this.height = 60;
 }
