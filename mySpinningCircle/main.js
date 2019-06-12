@@ -13,9 +13,9 @@ var deltaTime=0;          //两帧之间的时间差
 var mx;         //鼠标位置
 var my;         //鼠标位置
 
-var Circle_X= 800;
-var Circle_Y= 600;             //圆心的坐标
-var RADIUS = 300;
+var Circle_X;
+var Circle_Y;             //圆心的坐标
+var RADIUS;
 
 
 
@@ -42,14 +42,28 @@ function game() {
 }
 
 function init() {
+
+
     can1=document.getElementById("canvas1");
     ctx1=can1.getContext("2d");
 
     can2=document.getElementById("canvas2");
     ctx2=can2.getContext("2d");
 
-    canWidth = can1.width;
+    can1.width = window.innerWidth;         //屏幕自适应canvas
+    can1.height = window.innerHeight;
+
+    can2.width = window.innerWidth;
+    can2.height = window.innerHeight;
+
+
+
+    canWidth = can1.width;                //屏幕自适应canvas
     canHeight = can1.height;
+
+    Circle_X = canWidth/2;
+    Circle_Y = canHeight/2;
+    RADIUS = canHeight *1.5/5;          //
 
                 
     mx = Circle_X;
