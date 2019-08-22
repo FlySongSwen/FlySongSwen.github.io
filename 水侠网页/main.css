@@ -197,13 +197,14 @@ img{
 }
 
 .thumbUp .down .user{
-    width:65%;
+    width:40%;
     height:0.5rem;
     
 }
 
 .thumbUp .down .thumb{
-    width:35%;
+    width:50%;
+    text-align: right;
 }
 
 
