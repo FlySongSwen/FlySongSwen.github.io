@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>水知识</title>
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/css/swiper.min.css">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="header clearf">
+        <input type="text" class="fl">
+        <div class="image searchImg"><img src="./img/search.png" ></div>
+        <div class="image shareImg fl"><img src="./img/share.png" ></div>
+    </div>
+    <div class="swiper-container" id="swiper1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+        </div>
+    </div>
+
+    <div class="recommend">
+        <div class="title">
+            <span>推荐问题</span><span>>></span>
+        </div>
+        <div class="content">
+            <div class="text fl">
+                <p class="up">净水设备购买的五个真相，你知道了吗？</p>
+                <p class="down"><span>10.8W 围观</span><span>203 回答</span> </p>
+            </div>
+            <div class="image fr">
+                <img src="./img/01.jpg" style="width:100%;height:100%">
+            </div>
+        </div>
+        <div class="content">
+            <div class="text fl">
+                <p class="up">桶装水是如何生产的，知道真相之后男默女泪...</p>
+                <p class="down"><span>10.8W 围观</span><span>203 回答</span> </p>
+            </div>
+            <div class="image fr">
+                <img src="./img/02.jpg" style="width:100%;height:100%">
+            </div>
+        </div>
+        <div class="content">
+            <div class="text fl">
+                <p class="up">身体不适的时候，多喝热水真的有用吗？</p>
+                <p class="down"><span>10.8W 围观</span><span>203 回答</span> </p>
+            </div>
+            <div class="image fr">
+                <img src="./img/03.jpg" style="width:100%;height:100%">
+            </div>
+        </div>
+    </div>
+
+    <div class="thumbUp">
+        <div class="title">
+            <span>点赞最多</span><span>>></span>
+        </div>
+        <div class="content">
+            <p class="question">人每天喝多少水最合适？</p>
+            <div class="up clearf">
+                <p class="text fl">
+                    喝水有利于身体的观点已经越来越被人们所接受，那么从科学的喝水概念来讲，人一天应该......
+                </p>
+                <div class="image fr">
+                    <img src="./img/01.jpg" >
+                </div>
+            </div>
+            <div class="down clearf">
+                <div class="user fl">
+                    <div class="image"><img src="./img/avatar.jpg" class=".avatar"></div><span>Y.小杨</span>
+                </div>
+                <div class="thumb fr">
+                    <div class="image"><img src="./img/thumb.png"></div> <span>2.6K</span>
+                    <div class="image"><img src="./img/comment.png"></div><span>123</span>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+                <p class="question">6种不能喝的致命水有哪些</p>
+                <div class="up clearf">
+                    <p class="text fl">
+                        1、久置水：开水久置以后，其中含氮的有机物会不断被分解成亚硝酸盐。尤其是放够久的开水，难免有细菌污染，此时含氮有机物快速分解......
+                    </p>
+                   
+                </div>
+                <div class="down clearf">
+                    <div class="user fl">
+                        <div class="image"><img src="./img/avatar.jpg" class=".avatar"></div><span>Y.小杨</span>
+                    </div>
+                    <div class="thumb fr">
+                        <div class="image"><img src="./img/thumb.png"></div> <span>2.9K</span>
+                        <div class="image"><img src="./img/comment.png"></div><span>491</span>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/js/swiper.min.js"></script>
+    <script>
+        var swiper1 = new Swiper('#swiper1', {
+            direction: 'horizontal', // 切换选项
+            loop: false, // 循环模式选项
+            slidesPerView: 1.5,
+            normalizeSlideIndex: false, //若设置了slidesPreView，必须设置该值为false才能获得正确Index
+            centeredSlides: false,
+            spaceBetween: 20,
+
+        })
+    </script>
+</body>
+
+</html>
