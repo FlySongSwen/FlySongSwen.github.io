@@ -68,7 +68,7 @@ img{
     position:absolute;
     height:0.55rem;
     top:0.4rem;
-    right:16%;
+    right:20%;
 }
 
 .header .shareImg{
@@ -121,7 +121,7 @@ img{
 
 .recommend .content{
     margin-top:0.35rem;
-    height:2rem;
+    /* height:2rem; */
 }
 
 .recommend .text{
