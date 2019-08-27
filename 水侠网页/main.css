@@ -31,19 +31,22 @@
 .header,
 #swiper1,
 .recommend,
-.thumbUp
+.thumbUp,
+.more
 {
     padding-left:4.5%;
 }
 
 .header,
 .recommend,
-.thumbUp{
+.thumbUp,
+.more{
     padding-right:4%;
 }
 
 .recommend,
-.thumbUp{
+.thumbUp,
+.more{
     margin-top:0.3rem;
 }
 
@@ -88,7 +91,7 @@ img{
     margin-top:0.1rem;    
 }
 
-#swiper1{
+/* #swiper1{
     
     margin-top:0.4rem;
     margin-bottom:0.1rem;
@@ -111,25 +114,26 @@ img{
 
 #swiper1 .swiper-slide:nth-child(3){
     background-color: rgb(85, 235, 16);
-}
+} */
 
 .recommend .title,
-.thumbUp .title{
+.thumbUp .title,
+.more .title{
     color:#11b9e7;
     vertical-align: middle;
     letter-spacing: 0.015rem;
-    font-size:0.3rem;
+    font-size:0.32rem;
     font-weight: 550;
 }
 
-.recommend .title :last-child,
+/* .recommend .title :last-child,
 .thumbUp .title :last-child{
     letter-spacing: -0.05rem;
     margin-left: 0.08rem;
-}
+} */
 
 .recommend .content{
-    margin-top:0.35rem;
+    margin-top:0.3rem;
     /* height:2rem; */
 }
 
@@ -151,20 +155,36 @@ img{
     color:#3a3d3e;
 }
 
-.recommend .text .down{
+/* .recommend .text .down{
     margin-top:0.25rem;
     font-size:0.3rem;
     letter-spacing:0.02rem;
     color:#b5b5b5;
+} */
+
+.recommend .text .down{
+    height:0.5rem;
+    margin-top:0.3rem;
+    color:#b5b5b5;
+    font-size:0.3rem;  
+    letter-spacing: 0.03rem;  
 }
 
-.recommend .text .down :last-child{
+.recommend .text .down  .image{
+    width:8.5%;
+    margin-right:2.5%;
+    height:0.45rem;
+    border-radius: 0;
+    vertical-align: bottom;
+}
+
+.recommend .text .down :nth-child(3){
     margin-left:10%;
 }
 
 .thumbUp .content{
     /* height:3.5rem; */
-    margin-top:0.35rem;
+    margin-top:0.3rem;
     background-color: #ededed;
     padding:0 6% 0.25rem 4%;
     border-radius: 0.2rem;
@@ -198,7 +218,7 @@ img{
     width:70%;
 }
 .thumbUp .down{
-    height:0.5rem;
+    
     margin-top:0.3rem;
     color:#b5b5b5;
     font-size:0.3rem;  
@@ -234,9 +254,16 @@ img{
     /* width:15%; */
     height:0.35rem;
     margin-left:5%;
+    
 }
 
 .thumbUp .content:nth-child(3) .text{
     width:100%;
 }
 
+.more .title{
+    /* line-height:1.1;
+    text-decoration: underline; */
+    display: inline-block;
+    border-bottom: 1px solid #11b9e7;
+}
